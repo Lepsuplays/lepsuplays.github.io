@@ -1,0 +1,13 @@
+{
+    "NavBar": [
+        {
+            "header": "Leevin nettisivu",
+            "1": "Home",
+            "1link": "./index.html",
+            "2": "Links",
+            "2link": "./pages/links.html",
+            "3": "Contacts",
+            "3link": "./pages/links.html"
+        }
+    ]
+}

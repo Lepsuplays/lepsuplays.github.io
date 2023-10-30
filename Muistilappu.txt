@@ -1,0 +1,7 @@
+Json tiedostosta datan haku:
+
+fetch('./json/links.json')
+.then(response => response.json())
+    .then(Data => {
+        console.log(Data)
+    })

@@ -1,0 +1,29 @@
+div#Contacts {
+    font-family: var(--font);
+    width: 70vw;
+    margin: 60px auto;
+    background: var(--itemBg);
+    box-shadow: 0 0 5px var(--Shadow);
+    border-radius: 10px;
+    padding: 5px 10px;
+    min-height: 100px;
+}
+
+div#Contacts h2 {
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+div#Contacts table {
+    margin: 0 auto;
+}
+
+div#Contacts table tr td {
+    color: var(--text);
+    padding: 5px 20px;
+}
+
+div#Contacts table tr td a {
+    color: var(--link);
+}

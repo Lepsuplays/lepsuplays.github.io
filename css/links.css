@@ -1,0 +1,64 @@
+div#Links {
+    font-family: var(--font);
+    display: flex;
+    background: var(--itemBg);
+    width: 90vw;
+    padding: 15px 0;
+    margin: 10vh auto;
+    border-radius: 10px;
+    box-shadow: 0 0 7px var(--Shadow);
+    border: 2px solid var(--blue);
+}
+
+div#Sidebar {
+    background: var(--bg);
+    width: 15vw;
+    margin: 2.5%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--Shadow);
+    border: 2px solid var(--blue);
+    padding: 10px 0;
+    height: max-content;
+}
+
+div#Sidebar ul {
+    text-align: left;
+    color: var(--text);
+    width: max-content;
+    margin: 0 auto;
+}
+
+div#Sidebar ul h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+div#LinkArea {
+    /* Theese are for backround to link area */
+    /* background: var(--bg);
+    box-shadow: 0 0 5px var(--Shadow);
+    border: 2px solid var(--blue);
+    border-radius: 10px; */
+    margin: 0 auto;
+    width: 60vw;
+}
+
+div#LinkArea h2 {
+    margin: 10px 0;
+    text-align: center;
+    text-decoration: underline;
+}
+
+div#LinkArea p {
+    color: var(--text);
+}
+
+div#LinkArea p.LinkGategoryDescription {
+    font-size: larger;
+}
+
+div#LinkArea a {
+    display: block;
+    color: var(--link);
+    font-size: larger;
+    margin-top: 10px;
+}
