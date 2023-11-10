@@ -7,11 +7,15 @@
     <link rel="stylesheet" href="../css/links.css">
     <script src="../js/LinkDataRecieve.js" type="module"></script>
     <script src="../sitedata/links.js" type="module"></script>
+    <script src="../script.js"></script>
     <title>Links</title>
 </head>
 <body>
     <nav>
-        <h1 class="Mainheader">Leevin nettisivu</h1>
+        <div>
+            <h1 class="Mainheader">Leevin nettisivu</h1>
+            <img src="../img/Bars.png" alt="Bar icon" onclick="toggleVisibility('navBar', 'none', 'block')">
+        </div>
         <ul id="navBar">
             <li><a href="../index.html">Home</a></li>
             <li><a href="./links.html">links</a></li>
@@ -21,7 +25,7 @@
     <div id="Links">
         <div id="Sidebar">
             <ul id="SidebarItems">
-                <h1>Gategory</h1>
+                <h1>Gategories</h1>
             </ul>
         </div>
         <div id="LinkArea"></div>

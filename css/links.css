@@ -62,3 +62,52 @@ div#LinkArea a {
     font-size: larger;
     margin-top: 10px;
 }
+
+@media only screen and (max-width: 768px) {
+    div#Links {
+        display: block;
+    }
+    div#Sidebar {
+        width: max-content;
+        padding: 10px 40px;
+        margin: 0 auto;
+    }
+
+    div#LinkArea {
+        margin: 0 auto;
+        width: 90%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    div#Sidebar {
+        width: 30%;
+    }
+
+    div#LinkArea {
+        margin: 0 auto;
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    div#Sidebar {
+        width: 20%;
+    }
+
+    div#LinkArea {
+        margin: 0 auto;
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    div#Sidebar {
+        width: 15%;
+    }
+
+    div#LinkArea {
+        margin: 0 auto;
+        width: 80%;
+    }
+}

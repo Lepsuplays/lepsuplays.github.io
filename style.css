@@ -37,6 +37,17 @@ nav {
     align-items: center;
 }
 
+nav div {
+    display: inline-flex;
+}
+
+nav div img {
+    display: none;
+    width: 20px;
+    height: 20px;
+    margin: auto 20px auto auto; 
+}
+
 nav ul {
     margin: 0 2vw 0 auto;
 }
@@ -55,4 +66,46 @@ nav ul li a {
 nav ul li a:hover {
     font-size: large;
     background-color: var(--bg);
+}
+
+/* Styling nav bar for mobile */
+@media only screen and (max-width: 768px) {
+    nav {
+        display: block;
+        border: none;
+    }
+
+    nav div {
+        border-bottom: 2px solid var(--blue);
+        width: 100vw;
+    }
+
+    nav div h1{
+        text-align: center;
+    }
+
+    nav div img {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    nav ul li {
+        padding: 5px 0;
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 25px;
+        font-weight: 500;
+        font-family: sans-serif;
+    }
+
+    nav ul li a:hover {
+        font-size: 30px;
+    }
 }
