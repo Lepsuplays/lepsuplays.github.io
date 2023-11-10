@@ -80,8 +80,9 @@ nav ul li a:hover {
         width: 100vw;
     }
 
-    nav div h1{
+    nav div h1.Mainheader{
         text-align: center;
+        font-size: x-large;
     }
 
     nav div img {
