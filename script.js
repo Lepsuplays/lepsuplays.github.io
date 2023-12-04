@@ -8,3 +8,15 @@ function toggleVisibility(targetId, hidden, visible) {
         target.style.display = visible;
     }
 }
+
+// Functio that sets element visibility using id
+function setVisibility(targetId, visibility) {
+    var target = document.getElementById(targetId);
+    target.style.display = visibility;
+}
+
+// Allow cookies
+function allowCookies() {
+    setCookie("Cookies", "allowed", 180)
+    setVisibility("Cookies", "none")
+}

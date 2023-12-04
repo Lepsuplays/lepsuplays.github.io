@@ -12,12 +12,12 @@ div#Links {
 
 div#Sidebar {
     background: var(--bg);
-    width: 15vw;
     margin: 2.5%;
     border-radius: 10px;
     box-shadow: 0 0 5px var(--Shadow);
     border: 2px solid var(--blue);
-    padding: 10px 0;
+    width: max-content;
+    padding: 10px 40px;
     height: max-content;
 }
 
@@ -62,14 +62,46 @@ div#LinkArea a {
     font-size: larger;
     margin-top: 10px;
 }
+/* Add link */
+div#AddLink {
+    margin: 0 20px 0 0;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid var(--blue);
+    box-shadow: 0 0 10px var(--Shadow);
+    width: 20vw;
+    height: max-content;
+    display: none;
+    text-align: center;
+    background: var(--bg);
+}
+
+div#AddLink h2 {
+    text-decoration: underline;
+}
+
+div#AddLink input {
+    padding: 5px;
+    width: 95%;
+    border-radius: 20px;
+    border: none;
+    margin: 5px 0;
+}
+
+div#AddLink button {
+    width: 7vw;
+    height: 40px;
+    margin: 10px auto;
+    border-radius: 5px;
+    border: none;
+    color: var(--text);
+}
 
 @media only screen and (max-width: 768px) {
     div#Links {
         display: block;
     }
     div#Sidebar {
-        width: max-content;
-        padding: 10px 40px;
         margin: 0 auto;
     }
 
@@ -77,12 +109,13 @@ div#LinkArea a {
         margin: 0 auto;
         width: 90%;
     }
+    div#AddLink {
+        margin: 20px auto;
+        width: 55vw;
+    }
 }
 
 @media only screen and (min-width: 768px) {
-    div#Sidebar {
-        width: 30%;
-    }
 
     div#LinkArea {
         margin: 0 auto;
@@ -91,10 +124,6 @@ div#LinkArea a {
 }
 
 @media only screen and (min-width: 1366px) {
-    div#Sidebar {
-        width: 20%;
-    }
-
     div#LinkArea {
         margin: 0 auto;
         width: 70%;
@@ -102,10 +131,6 @@ div#LinkArea a {
 }
 
 @media only screen and (min-width: 1920px) {
-    div#Sidebar {
-        width: 15%;
-    }
-
     div#LinkArea {
         margin: 0 auto;
         width: 80%;

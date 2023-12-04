@@ -60,13 +60,14 @@ var Links = {
     ],
     "games": [
         {
-            "NumberOfLinks": 30,
+            "NumberOfLinks": 33,
             "Header": "Games",
             "Description": "Difrent games or mod sites for games.",
             "linkItems": ["Aternos", "https://aternos.org/", "Website that allows you to host your minecraft server for free.",
             "Optifine", "https://www.optifine.net/home", "Mod for minecraft that allows difrent additional features and game optimisation.",
             "Krunker", "https://krunker.io/", "First person shooter game that you can play on your web browser or download it from steam.",
             "1vs1.lol", "https://1v1.lol/", "Free batleroyale game that you can play in your web browser.",
+            "Gta guesser", "https://gtaguessr.com/", "Fun little game that makes GTA V GeoGuesser",
             "Farming Simulator mods", "https://www.farming-simulator.com/mods.php", "Place where you can download mods for difrent farming simulator games",
             "Nexusmods", "https://www.nexusmods.com/", "Place where you can download mods for difrent games.",
             "Racedepartment", "https://www.racedepartment.com/", "Racedepartment is place where you can download mods for diffrent games.",
@@ -95,10 +96,12 @@ var Links = {
     ],
     "funStuff": [
         {
-            "NumberOfLinks": 3,
+            "NumberOfLinks": 6,
             "Header": "Fun stuff",
             "Description": "All kinds of fun styff that you can play with",
-            "linkItems": ["Minecraft font", "https://github.com/IdreesInc/Monocraft", "Github repository that contains minecraft font and you can download and use it."]
+            "linkItems": ["Minecraft font", "https://github.com/IdreesInc/Monocraft", "Github repository that contains minecraft font and you can download and use it.",
+            "True Size", "https://www.thetruesize.com/", "World map site"
+            ]
         }
     ],
     "mySites": [

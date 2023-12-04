@@ -11,8 +11,31 @@ function deleteLinkData() {
 document.body.addEventListener(onload, LoadData())
 
 document.getElementById("SidebarItems").onclick = function(event) {
-    if (event.target.innerText === "Gategory") {
+    setVisibility('AddLink', 'none')
+    if (event.target.innerText === "Gategories") {
         getData(Default)
+        // if user clicks gategory named Your links
+    } else if (event.target.innerText === "Your links") {
+        // Gets value from cookie Cookies
+        var cookies = checkCookie("Cookies");
+        // Checks if cookies have accepted and if not this runs
+        if (cookies === "empty") {
+            // Sets Cookies element value to block
+            setVisibility("Cookies", "block");
+            // Removes all data from link area
+            deleteLinkData()
+            // Creates header amd sets its value
+            var item = document.createElement("h2");
+            item.innerText = "Your links";
+            document.getElementById("LinkArea").appendChild(item)
+            // Creates text element and sets its value
+            var item = document.createElement("p");
+            item.innerText = "You have to accept cookies to acces this feature and re open this gategory after you accepted cookies";
+            document.getElementById("LinkArea").appendChild(item)
+        // If Cookies have been accepted this runs
+        } else {
+            getYourLinks();
+        }
     } else {
         getData(event.target.className);
     }
@@ -74,6 +97,54 @@ function GetLinks(requestCommand) {
     // Checks if function needs to be called again
     if (LinkNumber < NumberOfLinkElements) {
         GetLinks(requestCommand);
+    }
+}
+
+
+function getYourLinks() {
+    deleteLinkData();
+    
+    if (checkCookie("Cookies") != "empty") {
+        setVisibility('AddLink', 'block')
+    }
+    
+    var links = checkCookie("Links")
+    var linkCounter = 0
+    if (links != "empty") {
+        var links = getCookie("Links")
+        links = JSON.parse(links);
+        // Adding header and description in your links
+        var item = document.createElement("h2");
+        item.innerText = links.Header;
+        document.getElementById("LinkArea").appendChild(item)
+
+        var item = document.createElement("p");
+        item.innerText = links.Description;
+        document.getElementById("LinkArea").appendChild(item)
+
+        var linkNumber = links.NumberOfLinks;
+        var data = links.linkItems;
+        while (linkCounter < linkNumber) {
+            // Creates link element and adds data to it
+            var item = document.createElement("a");
+            item.innerText = data[linkCounter];
+            item.href = data[linkCounter + 1];
+            document.getElementById("LinkArea").appendChild(item)
+            // Creates description element
+            var item = document.createElement("p");
+            item.innerText = data[linkCounter + 2];
+            document.getElementById("LinkArea").appendChild(item)
+            // Adds 3 to link number so it gets new link
+            linkCounter = linkCounter + 3
+        }
+    } else {
+        var item = document.createElement("h2");
+        item.innerText = "Your links";
+        document.getElementById("LinkArea").appendChild(item)
+        // Creates text element and sets its value
+        var item = document.createElement("p");
+        item.innerText = "You don't have any links saved";
+        document.getElementById("LinkArea").appendChild(item)
     }
 }
 

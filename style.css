@@ -11,6 +11,8 @@
     --font: 'Courier New';
     --Shadow: #006eff;
     --link: #4897ff;
+    --green: green;
+    --red: red;
 }
 
 body {
@@ -20,6 +22,17 @@ body {
 h2 {
     color: var(--text);
 }
+
+
+/* Allow and deny button */
+button.allow {
+    background: var(--green);
+}
+
+button.deny {
+    background: var(--red);
+}
+/* Allow and deny button ends */
 
 h1.Mainheader {
     color: var(--text);
@@ -80,9 +93,8 @@ nav ul li a:hover {
         width: 100vw;
     }
 
-    nav div h1.Mainheader{
+    nav div h1{
         text-align: center;
-        font-size: x-large;
     }
 
     nav div img {
@@ -109,4 +121,34 @@ nav ul li a:hover {
     nav ul li a:hover {
         font-size: 30px;
     }
+}
+
+div#Cookies {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    border-radius: 10px 10px 0 0;
+    border: 1px solid var(--blue);
+    box-shadow: 0 0 5px var(--Shadow);
+    padding: 10px;
+    background: var(--itemBg);
+    width: max-content;
+}
+
+div#Cookies h2 {
+    text-decoration: underline;
+}
+
+div#Cookies p {
+    color: var(--text);
+}
+
+div#Cookies button {
+    width: 100%;
+    height: 40px;
+    margin: 5px 0;
+    color: var(--text);
+    border-radius: 5px;
+    border: none;
 }

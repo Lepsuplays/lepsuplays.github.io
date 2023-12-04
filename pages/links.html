@@ -6,8 +6,10 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="../css/links.css">
     <script src="../js/LinkDataRecieve.js" type="module"></script>
+    <script src="../js/storingLinks.js" type="module"></script>
     <script src="../sitedata/links.js" type="module"></script>
     <script src="../script.js"></script>
+    <script src="../js/cookies.js"></script>
     <title>Links</title>
 </head>
 <body>
@@ -26,10 +28,24 @@
         <div id="Sidebar">
             <ul id="SidebarItems">
                 <h1>Gategories</h1>
+                <li>Your links</li>
             </ul>
         </div>
         <div id="LinkArea"></div>
+        <div id="AddLink">
+            <h2>Add new link</h2>
+            <input type="text" id="Link" placeholder="Link" title="Link">
+            <input type="text" id="LinkHeader" placeholder="Link header" title="Text that is displayed instead of link">
+            <input type="text" id="LinkDesc" placeholder="Description for link" title="Link Description">
+            <button class="allow" id="AddNewLinkButton">Add</button>
+            <button class="deny" id="CancelNewLinkButton">Cancel</button>
+        </div>
     </div>
-    
+    <div id="Cookies">
+        <h2>Allow this site to use cookies</h2>
+        <p>This site only uses cookies to store your links.</p>
+        <button class="allow"onclick="allowCookies()">Allow</button>
+        <button class="deny" onclick="setVisibility('Cookies', 'none')">Deny</button>
+    </div>
 </body>
 </html>
