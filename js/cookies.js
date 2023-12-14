@@ -44,3 +44,11 @@ function setCookie(cookieName, cookieValue, expirationDays) {
         document.cookie = cookieName + "=" + cookieValue + ";" + expires + ";path=/";
     }
 }
+
+// This function don't allow to create cookies if Cookies is not allowed
+function createCookie(cookieName, CookieValue, expirationDays) {
+    var Cookies = checkCookie("Cookies")
+    if (Cookies != "empty") {
+        setCookie(cookieName, CookieValue, expirationDays)
+    }
+}

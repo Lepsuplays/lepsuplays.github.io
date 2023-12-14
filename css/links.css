@@ -1,5 +1,4 @@
 div#Links {
-    font-family: var(--font);
     display: flex;
     background: var(--itemBg);
     width: 90vw;

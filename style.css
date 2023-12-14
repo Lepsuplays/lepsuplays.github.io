@@ -17,6 +17,7 @@
 
 body {
     background: var(--bg);
+    font-family: var(--font);
 }
 
 h2 {
@@ -43,7 +44,6 @@ h1.Mainheader {
 }
 
 nav {
-    width: 100vw;
     background: var(--itemBg);
     border-bottom: 2px solid var(--blue);
     display: flex;
@@ -133,7 +133,7 @@ div#Cookies {
     box-shadow: 0 0 5px var(--Shadow);
     padding: 10px;
     background: var(--itemBg);
-    width: max-content;
+    max-width: 20vw;
 }
 
 div#Cookies h2 {
@@ -151,4 +151,24 @@ div#Cookies button {
     color: var(--text);
     border-radius: 5px;
     border: none;
+}
+
+/* Scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #666;
+    border-radius: 5px;
+}
+    
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #858585;
+    border-radius: 5px;
 }

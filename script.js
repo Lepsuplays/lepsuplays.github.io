@@ -9,6 +9,13 @@ function toggleVisibility(targetId, hidden, visible) {
     }
 }
 
+function checkCookies() {
+    var Cookies = checkCookie("Cookies")
+    if (Cookies === "empty") {
+        setVisibility("Cookies", "block")
+    }
+}
+
 // Functio that sets element visibility using id
 function setVisibility(targetId, visibility) {
     var target = document.getElementById(targetId);

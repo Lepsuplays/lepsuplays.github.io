@@ -1,0 +1,30 @@
+div.countdowns {
+    width: 80vw;
+    padding: 20px 0;
+    margin: 100px auto 0;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--blue);
+    color: var(--text);
+    background: var(--itemBg);
+    border: 2px solid var(--blue);
+}
+
+div.countdowns h1 {
+    font-size: 70px;
+    margin: 20px 0 0;
+    text-decoration: underline;
+}
+
+div.countdown {
+    margin: 100px 0;
+}
+
+div.countdown h1 {
+    font-size: xx-large;
+    margin: 5px 0;
+}
+
+p.countdownTimer {
+    margin: 20px 0;
+}

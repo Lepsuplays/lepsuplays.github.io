@@ -4,6 +4,7 @@ var counter = 0
 var LinkNumber = 0
 var Default = "mainPage"
 
+
 function deleteLinkData() {
     document.getElementById("LinkArea").innerHTML = "";
 }
