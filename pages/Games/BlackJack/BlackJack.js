@@ -45,7 +45,7 @@ function StartGame() {
 
     // Value reset ends
 
-    CreateCard("./Cards/Back.png", "Dealer", true)
+    CreateCard("./Cards/back.png", "Dealer", true)
 
     for (let i = 0; i < 3; i++) {
         var CardGoes
