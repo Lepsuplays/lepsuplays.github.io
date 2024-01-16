@@ -1,0 +1,78 @@
+button#Start {
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid var(--Shadow);
+    background: var(--itemBg);
+    color: var(--text);
+    margin: 0 20px;
+    box-shadow: 0 0 5px var(--Shadow);
+    margin: 0 auto;
+}
+
+div#BlackJackGame {
+    width: 90vw;
+    margin: 100px auto 0;
+}
+
+div#BlackJackGame h1 {
+    text-align: center;
+    text-decoration: underline;
+    color: var(--text);
+}
+
+h2.PlayerText {
+    text-align: center;
+    text-decoration: underline;
+    margin: 20px 0 0;
+}
+
+p.Sum {
+    text-align: center;
+    color: var(--text);
+}
+
+p#Result {
+    text-align: center;
+    color: var(--text);
+}
+
+div#DealerCards {
+    width: max-content;
+    margin: 5px auto;
+}
+
+div#DealerCards img {
+    margin: 0 3px;
+}
+
+div#PlayerCards {
+    width: max-content;
+    margin: 5px auto;
+}
+
+div#PlayerCards img {
+    margin: 0 3px;
+}
+
+div#Buttons {
+    width: max-content;
+    margin: 50px auto;
+}
+
+div#Buttons button {
+    width: 80px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid var(--Shadow);
+    background: var(--itemBg);
+    color: var(--text);
+    margin: 0 20px;
+    box-shadow: 0 0 5px var(--Shadow);
+}
+
+
+
+div#Buttons button:hover {
+    font-size: medium;
+}

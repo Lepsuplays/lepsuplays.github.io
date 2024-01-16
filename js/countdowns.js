@@ -2,8 +2,9 @@
 
 //       Timer Dates
 //               day-month-year
-var christmas   = "24/12/####"
-var newYear     = "31/12/####"
+var christmas       = "24/12/####"
+var newYear         = "31/12/####"
+var DevsBirthday    = "01/02/####" 
 
 
 // variables
@@ -30,6 +31,7 @@ function TimeUpdate() {
     // Calls functions that updates times
     calculateTimeLeft(christmas, "christmasTimer");
     calculateTimeLeft(newYear, "newYearTimer");
+    calculateTimeLeft(DevsBirthday, "DevsBirhdayTimer")
     // Recalls function after one second
     setTimeout(TimeUpdate, 1000);
 }

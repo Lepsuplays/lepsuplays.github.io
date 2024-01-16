@@ -17,7 +17,7 @@
 
 body {
     background: var(--bg);
-    font-family: var(--font);
+    font-family: var(--font);;
 }
 
 h2 {

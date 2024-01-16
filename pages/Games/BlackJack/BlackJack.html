@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../style.css">
+    <link rel="stylesheet" href="./BlackJack.css">
+    <script src="../../../script.js"></script>
+    <script src="../../../js/cookies.js"></script>
+    
+    <title>Black Jack</title>
+</head>
+<body>
+    <nav>
+        <div>
+            <h1 class="Mainheader">Leevin nettisivu</h1>
+            <img src="../../../img/Bars.png" alt="Bar icon" onclick="toggleVisibility('navBar', 'none', 'block')">
+        </div>
+        <ul id="navBar">
+            <li><a href="../../../index.html">Home</a></li>
+            <li><a href="../../links.html">links</a></li>
+            <li><a href="../../todo.html">To Do</a></li>
+            <li><a href="../../devtools.html">Dev Tools</a></li>
+            <li><a href="../Games.html">Games</a></li>
+            <li><a href="../../countdowns.html">Countdowns</a></li>
+            <li><a href="../../contacts.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <div id="BlackJackGame">
+        <h1>Blackjack</h1>
+        <p id="Result"></p>
+        <h2 class="PlayerText">Dealer's cards</h2>
+        <p id="DealerSum" class="Sum">0</p>
+        <div id="DealerCards"></div>
+        <h2 class="PlayerText">Your cards</h2>
+        <p id="PlayerSum" class="Sum">0</p>
+        <div id="PlayerCards"></div>
+        <div id="Buttons">
+            <Button id="Hit">Hit</Button>
+            <Button id="Stand">Stand</Button>
+            <!-- <Button id="Double">Double</Button> -->
+            <button id="Start">Restart</button>
+        </div>
+    </div>
+    <script src="./BlackJack.js" type="module"></script>
+</body>
+</html>

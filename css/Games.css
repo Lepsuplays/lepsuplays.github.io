@@ -1,0 +1,42 @@
+div.GameSelector {
+    background: var(--itemBg);
+    width: 90vw;
+    margin: 100px auto;
+    color: var(--text);
+    border-radius: 10px;
+    box-shadow: 0 0 7px var(--Shadow);
+    border: 2px solid var(--blue);
+    padding: 20px 0;
+}
+
+div.GameSelector h1 {
+    text-decoration: underline;
+    text-align: center;
+}
+
+div.Games {
+    display: grid;
+    grid-template-columns: 17vw 17vw 17vw 17vw 17vw;
+    text-align: center;
+    width: max-content;
+    margin: 20px auto;
+}
+
+div.Game {
+    background: var(--bg);
+    border: 2px solid var(--Shadow);
+    box-shadow: 0 0 5px var(--Shadow);
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+a.GameName {
+    color: var(--text);
+    font-size: larger;
+}
+
+p.GameDescription {
+    margin: 5px 0;
+}
+

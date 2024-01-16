@@ -1,0 +1,11 @@
+div.SnakeGame {
+    margin: 100px auto;
+    width: max-content;
+}
+
+canvas#SnakeGame {
+    border: 2px solid var(--Shadow);
+    box-shadow: 0 0 5px var(--Shadow);
+    border-radius: 6px;
+    background: #888;
+}

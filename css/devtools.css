@@ -1,0 +1,95 @@
+/* @font-face {
+    font-family: Monocraft;
+    src: url(../Fonts/Monocraft.ttf);
+} */
+
+div#base {
+    display: flex;
+    background: var(--itemBg);
+    width: 90vw;
+    padding: 15px 0;
+    margin: 10vh auto;
+    border-radius: 10px;
+    box-shadow: 0 0 7px var(--Shadow);
+    border: 2px solid var(--blue);
+}
+
+div#Sidebar {
+    background: var(--bg);
+    margin: 2.5%;
+    border-radius: 10px;
+    box-shadow: 0 0 5px var(--Shadow);
+    border: 2px solid var(--blue);
+    width: max-content;
+    padding: 10px 40px;
+    height: max-content;
+}
+
+div#Sidebar ul {
+    text-align: left;
+    color: var(--text);
+    width: max-content;
+    margin: 0 auto;
+}
+
+div#Sidebar ul h1 {
+    text-align: center;
+    text-decoration: underline;
+}
+
+Div#DataArea {
+    width: 65%;
+    margin: 0 auto;
+}
+
+/* Fonts */
+.FontShowcase {
+    color: var(--text);
+    font-size: 20px;
+}
+.FontNames {
+    text-decoration: underline;
+    margin: 15px 0 5px;
+}
+
+.FontDescription {
+    color: var(--text);
+    margin: 10px 0;
+}
+
+.GategoryHeader {
+    text-align: center;
+    color: var(--text);
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+
+/* Colors */
+.ColorBox {
+    display: flex;
+    border: 3px solid #fff;
+    text-align: center;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+}
+
+.ColorDescription {
+    color: var(--text);
+}
+
+@media only screen and (max-width: 768px) {
+    div#base {
+        display: block;
+    }
+    div#Sidebar {
+        margin: 0 auto;
+    }
+
+    div#DataArea {
+        margin: 0 auto;
+        width: 90%;
+    }
+}

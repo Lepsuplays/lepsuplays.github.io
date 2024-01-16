@@ -28,3 +28,20 @@ div.countdown h1 {
 p.countdownTimer {
     margin: 20px 0;
 }
+
+@media only screen and (max-width: 768px) {
+    div.countdowns {
+        width: 90%;
+    }
+    div.countdowns h1 {
+        font-size: xx-large;
+    }
+
+    div.countdown {
+        margin: 50px 0;
+    }
+
+    div.countdown h1 {
+        font-size: x-large;
+    }
+}

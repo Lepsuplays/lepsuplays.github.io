@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
-    <link rel="stylesheet" href="../css/contacts.css">
+    <link rel="stylesheet" href="../css/devtools.css">
+    <link rel="stylesheet" href="../Fonts/Fonts.css">
     <script src="../script.js"></script>
-    <title>Contacts</title>
+    <script src="../js/cookies.js"></script>
+    
+    <title>Dev tools</title>
 </head>
 <body>
     <nav>
@@ -24,33 +27,18 @@
             <li><a href="./contacts.html">Contacts</a></li>
         </ul>
     </nav>
-    <div id="Contacts">
-        <h2>Contacts</h2>
-        <table>
-            <tr>
-                <td>Email:</td>
-                <td>maybe later</td>
-            </tr>
-            <tr>
-                <td>Tel:</td>
-                <td>Maybe later</td>
-            </tr>
-            <tr>
-                <td>Discord:</td>
-                <td>lepsuplays</td>
-            </tr>
-        </table>
-        <h2>Socials</h2>
-        <table>
-            <tr>
-                <td>Youtube:</td>
-                <td><a href="https://www.youtube.com/@lepsuplays">@Lepsuplays</a></td>
-            </tr>
-            <tr>
-                <td>Twitch:</td>
-                <td><a href="https://www.twitch.tv/lepsuplays">lepsuplays</a></td>
-            </tr>
-        </table>
+
+    <div id="base">
+        <div id="Sidebar">
+            <ul id="SidebarItems">
+                <h1>Gategories</h1>
+                <li id="Fonts">Fonts</li>
+                <li id="Colors">Colors</li>
+            </ul>
+        </div>
+        <div id="DataArea"></div>
     </div>
+    <script src="../js/DevTools.js" type="module"></script>
+    <script src="../sitedata/DevToolsData.js" type="module"></script>
 </body>
 </html>

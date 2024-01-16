@@ -50,3 +50,16 @@ div#removeCheck button {
     border: none;
     color: var(--text);
 }
+
+@media only screen and (max-width: 768px) {
+    div.ToDo {
+        width: 90%;
+    }
+
+    div#removeCheck {
+        left: 15px;
+        top: 350px;
+        width: 80%;
+        position: absolute;
+    }
+}
